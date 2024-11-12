@@ -2,8 +2,8 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:8000/api', // Asegúrate de usar la URL de tu API Laravel
-  headers: {
+   baseURL: process.env.VUE_APP_API_URL || 'http://localhost:8000/api', // Si la variable de entorno no está definida, usa la URL por defecto
+   headers: {
     'Content-Type': 'application/json',
     // Puedes agregar más encabezados aquí, como el token de autorización si es necesario.
   }
