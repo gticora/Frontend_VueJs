@@ -2,12 +2,12 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-   baseURL: process.env.VUE_APP_API_URL || 'http://localhost:8000/api', // Si la variable de entorno no está definida, usa la URL por defecto
-   headers: {
-    'Content-Type': 'application/json',
-    // Puedes agregar más encabezados aquí, como el token de autorización si es necesario.
+  baseURL: process.env.VITE_API_URL || 'http://localhost:8000/api',
+  headers: {
+    'Content-Type': 'application/json'
   }
 });
+
 
 // Función para iniciar sesión y almacenar el token
 export const login = async (email, password) => {
