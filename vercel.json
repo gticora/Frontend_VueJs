@@ -1,16 +1,11 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist" }
-    }
-  ],
   "env": {
     "VITE_API_URL": "https://backend-api-production-1bb4.up.railway.app/api"
   },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/hoteles" }
+    { 
+      "source": "/api/(.*)", 
+      "destination": "/index.html" 
+    }
   ]
 }
