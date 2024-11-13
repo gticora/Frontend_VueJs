@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: process.env.VITE_API_URL || 'http://localhost:8000/api',
+  baseURL: process.env.VITE_API_URL || 'https://backend-api-production-1bb4.up.railway.app/api',
   headers: {
     'Content-Type': 'application/json'
   }
