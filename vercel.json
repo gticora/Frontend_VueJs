@@ -8,9 +8,9 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "https://your-api-server-url.com/api"
+    "VITE_API_URL": "https://backend-api-production-1bb4.up.railway.app/api"
   },
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "https://your-api-server-url.com/api/$1" }
+    { "source": "/api/(.*)", "destination": "ttps://backend-api-production-1bb4.up.railway.app/api/$1" }
   ]
 }
